@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" >
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header__section padding">
+            <div class="header__row">
+                <h1>loopstudios</h1>
+                <div class="nav__bar" >
+                    <ul>
+                        <li>
+                            <a href="#"> About </a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#"> Events </a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <button onclick="show__nav()" class="hamburger"><img src="./assets/images/icon-hamburger.svg"/></button>
+            </div>
+            
+            <div id="slider" class="header__carasoul">
+                <figure>
+                    <img src="img/desk.png">
+                    <img src="img/desk2.png">
+                    <img src="img/desk.png">
+                    <img src="img/desk3.png">
+                    <img src="img/desk.png">
+                </figure>
+            </div>
+
+        </div>
+
+        <div class="nav__bar__mb">
+            <div class="nav__bar__small" >
+                <div class="mb__header">
+                    <h1>loopstudios</h1>
+                    <button " onclick="show__ham()" class="close"><img src="./assets/images/icon-close.svg"/></button>     
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"> ABOUT </a>
+                    </li>
+                    <li>
+                        <a href="#">CAREERS</a>
+                    </li>
+                    <li>
+                        <a href="#"> EVENTS </a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="#">SUPPORT</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        
+        <div class="creations__section padding">
+            <div class="creations__heading__row">
+                <h2>OUR CREATIONS</h2>
+                <button>SEE ALL</button>
+            </div>
+            <div class="card__holder">
+                <div class="img1 img__cover"><h4>DEEP EARTH</h4></div>
+                <div class="img2 img__cover"><h4>NIGHT ARCADE</h4></div>
+                <div class="img3 img__cover"><h4>SOCCER TEAM VR</h4></div>
+                <div class="img4 img__cover"><h4>THE GRID</h4></div>
+                <div class="img5 img__cover"><h4>FROM ABOVE VR</h4></div>
+                <div class="img6 img__cover"><h4>POCKET BOREALIS</h4></div>
+                <div class="img7 img__cover"><h4>THE CURIOSITY</h4></div>
+                <div class="img8 img__cover"><h4>MAKE IT FISHEYE</h4></div>
+            </div>
+        </div>
+
+        <div class="footer padding">
+            <div class="footer__col">
+                <h2>loopstudios</h2>
+                <div class="footer__bar">
+                    <ul class="social__icons">
+                        <li>
+                            <a href="#"> About </a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#"> Events </a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__bar">
+                    <ul class="icons">
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-facebook.svg" alt="fb"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-twitter.svg" alt="twi"/></a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="./assets/images/icon-pinterest.svg" alt="pin"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/images/icon-instagram.svg" alt="ins"/></a>
+                        </li>
+                    </ul>   
+                </div>
+                <h4 class="copy">&copy2021 Loopstudios. All rights reserved.</h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function show__nav()
+        {
+            document.getElementsByClassName('nav__bar__mb')[0].style.display='block';
+            document.getElementsByClassName('header__section')[0].style.display='none';
+            document.getElementsByClassName('nav__bar__small')[0].style.marginRight='0';
+            document.getElementsByClassName('close')[0].style.marginLeft="100px";
+            document.getElementsByClassName('hamburger')[0].style.display='none';
+            document.getElementsByClassName('nav__bar')[0].style.display='none';
+            document.getElementsByClassName('header__text')[0].style.marginTop='4vh';
+            document.getElementsByClassName('nav__bar__mb')[0].classList.add("slide__effect");
+        }
+
+        function show__ham(){
+            document.getElementsByClassName('hamburger')[0].style.display='block';
+            document.getElementsByClassName('nav__bar__mb')[0].style.display='none';
+            document.getElementsByClassName('header__section')[0].style.display='block';
+            window.location.reload(true);
+        }
+    </script>
+    
+</body>
+</html>

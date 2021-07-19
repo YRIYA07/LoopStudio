@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;   
+}
+
+.padding{
+    padding: 4% 11%;  
+}
+
+.header__section{
+    color:white;
+    width: auto;
+    height: 60vh;
+    /* padding: 4% 11%; */
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-size: cover;  
+}
+
+.header__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__row > h1{
+    font-family: 'Alata', sans-serif;
+    font-size: 30px;
+}
+
+.nav__bar li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav__bar li a:hover{
+    border-bottom: 1px white;
+}
+
+.nav__bar li a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav__bar li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav__bar__mb
+{
+    color:white;
+    display: none;
+    width: auto;
+    height: 70vh;
+    background-color: black;
+}
+
+.nav__bar__small {   
+}
+
+.mb__header{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mb__header h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.nav__bar__small li{
+ list-style: none;
+ padding: 15px 0;
+}
+
+
+
+.nav__bar__small li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    
+}
+
+.nav__bar__small li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.header__text{
+    height: fit-content;
+    position: absolute;
+    width: fit-content;
+    border: 1px solid white;
+    font-size: 50px;
+    padding: 25px;
+    margin-top: 18vh;
+    padding-right: 80px;
+}
+
+.hamburger{
+    display: none;
+    background-color: transparent; 
+    outline: 0;
+    border: 0; 
+    height: fit-content; 
+    padding: 10px;
+}
+
+.close{
+    background-color: transparent; 
+    outline: 0; 
+    border: 0;
+    height: fit-content; 
+    margin-right: 25px !important;
+}
+
+.about__section{
+    color: black;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    /* padding: 7% 11% 4% 11%; */
+}
+
+.about__image{
+    height: 50vh;
+    width: 50vw;
+    background-image: url('../images/desktop/image-interactive.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.about__description
+{
+    height: fit-content;
+    width: 50vw;
+    background-color: white;
+    position:relative;
+    margin-left: -150px;
+    margin-top: 23vh;
+    padding:70px 70px 10px 70px;
+}
+
+.about__description h1{
+    
+    font-size: 30px;
+    font-weight: 10;
+    margin-bottom: 25px;
+}
+
+.about__description p{
+    font-size: 18px;
+}
+.creations__section{
+    /* padding: 4% 11%; */
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+}
+
+.creations__heading__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.creations__heading__row h2{
+    font-size: 30px;
+    font-weight: 10;
+}
+
+.creations__heading__row button{
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+}
+
+.creations__heading__row button:hover{
+    cursor: pointer;
+}
+
+.card__holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card__holder>div{
+    height:360px;
+    width: 260px;
+    margin-right: 34px;
+    margin-bottom: 34px;
+    align-items: center;
+    color: white;
+}
+
+.card__holder div h4
+{
+    font-size: 30px; 
+    margin-top:240px ;
+    padding:30px; 
+   
+}
+
+.card__holder div:hover{
+    cursor: pointer;
+    opacity: 0.6;   
+}
+
+.card__holder div:hover h4{
+    animation: bounce 1s;
+}
+
+.img__cover
+{
+    background-size:cover ;
+}
+
+.img1{
+ background-image: url('../images/desktop/image-deep-earth.jpg');
+}
+
+.img2{
+    background-image: url('../images/desktop/image-night-arcade.jpg');
+}
+
+.img3{
+    background-image: url('../images/desktop/image-soccer-team.jpg');
+   
+}
+
+.img4{
+    background-image: url('../images/desktop/image-grid.jpg');
+}
+
+.img5{
+    background-image: url('../images/desktop/image-from-above.jpg');
+}
+
+.img6{
+    background-image: url('../images/desktop/image-pocket-borealis.jpg');
+}
+
+.img7{
+    background-image: url('../images/desktop/image-curiosity.jpg');
+
+}
+
+.img8{
+    background-image: url('../images/desktop/image-fisheye.jpg');
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 3% 11%; */
+    height:fit-content;
+    justify-content: space-between;
+    background-color: black;
+    color: white
+}
+.footer__bar{
+    margin-left: -43px;
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.footer__bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer__bar ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.footer__bar ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+.footer__col h2{
+ font-size: 20px;
+ font-weight: 700;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.icons{
+    /* margin-top: -20px; */
+    margin-bottom: 20px;
+}
+.copy{
+    color: darkgray;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.slide__effect{
+    animation: slidein 0.3s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width:1508px)
+{
+    .card__holder>div{
+        width: 340px;
+    }
+
+}
+
+@media screen and (max-width:1450px)
+{
+    .card__holder>div{
+        width: 325px;
+    }
+
+}
+
+@media screen and (max-width:1380px)
+{
+    .card__holder>div{
+        width: 280px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1228px)
+{
+    .header__text{
+        font-size:35px;
+    }
+    .about__description{
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width:1207px)
+{
+    .card__holder{
+        flex-grow: inherit;
+    }
+    .card__holder>div{
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:1135px){
+    .card__holder>div{
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .about__image{   
+        background-image: url('../images/mobile/image-interactive.jpg');
+    }
+
+    .about__section{
+        display: block;
+    }
+    .about__image{
+        width: 100%;
+        background-size: cover;
+        
+    }
+    .about__description{
+        margin:0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: auto;
+       text-align: center;
+
+    }
+    
+}
+
+@media screen and (max-width:910px)
+{
+    .card__holder>div{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        align-items:center;
+    }
+    .social__icons{
+        display:flex;
+        flex-direction:column !important;
+    }
+    .social__icons li{
+        margin:5px !important;
+    }
+
+    .icons{
+        margin:30px;
+    }
+}
+
+
+@media screen and (max-width:767px)
+{
+    .header__text{
+        font-size:25px;
+    } 
+
+    .card__holder{
+        flex-direction: column;
+    }
+
+    .card__holder>div{
+        width: 100%;
+        height: 200px;
+    }
+
+    .card__holder div h4{
+        margin-top: 120px;
+    }
+
+    .footer__col h2{
+        margin-top: 40px;
+    }
+
+    .padding{
+        padding: 4% 5%;
+    }
+
+    .creations__heading__row {
+        margin: 0 auto 40px  auto;
+    }
+
+    .creations__heading__row button{
+        display: none;
+    }
+    
+    
+
+    
+.img1{
+    background-image: url('../images/mobile/image-deep-earth.jpg');
+   }
+   
+   .img2{
+       background-image: url('../images/mobile/image-night-arcade.jpg');
+   }
+   
+   .img3{
+       background-image: url('../images/mobile/image-soccer-team.jpg');
+   }
+   
+   .img4{
+       background-image: url('../images/mobile/image-grid.jpg');
+   }
+   
+   .img5{
+       background-image: url('../images/mobile/image-from-above.jpg');
+   }
+   
+   .img6{
+       background-image: url('../images/mobile/image-pocket-borealis.jpg');
+   }
+   
+   .img7{
+       background-image: url('../images/mobile/image-curiosity.jpg');
+   }
+   
+   .img8{
+       background-image: url('../images/mobile/image-fisheye.jpg');
+   }
+
+   .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__bar{
+        display:none;
+    }
+
+
+}
+
+@media screen and (max-width:430px)
+{
+    .header__text{
+        padding: 15px;
+        padding-right: 40px;
+    }
+    .card__holder div h4{
+        margin-top: 90px;
+    }
+
+    .header__text{
+        font-size: 35px;
+        margin-right: 20px;
+    }
+}
+
